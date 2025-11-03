@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 # ---------------- Переменные ----------------
 TOKEN = os.getenv("TELEGRAM_TOKEN")
-RENDER_URL = "https://angel-camp.onrender.com"  # ЗАМЕНИТЕ на ваш реальный URL
+RENDER_URL = "https://tg-bot-info.onrender.com"  # ЗАМЕНИТЕ на ваш реальный URL
 
 # ---------------- Команда /start ----------------
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -112,4 +112,5 @@ async def health_check():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
